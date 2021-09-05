@@ -1,13 +1,18 @@
 import * as React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import Header from './components/Header';
 import MarketingApp from './components/MarketingApp';
 
 function App() {
   return (
-    <div>
-      <h1>Container Engineer Team</h1>
-      <hr />
-      <MarketingApp />
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <hr />
+        <MarketingApp />
+      </div>
+    </Router>
   );
 }
 
